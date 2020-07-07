@@ -1,10 +1,10 @@
-city: Ville
-address: Adresse
-title: Titre
-price: Prix
-rooms : Pièces
-bedrooms : Salle de bain
+City: Ville
+Address: Adresse
+Title: Titre
+Price: Prix
+Rooms : Pièces
+Bedrooms : Salle de bain
 Floor : étages
-heat : Chauffage
-postal code : Code postal
-sold : Vendu
+Heat : Chauffage
+Postal code : Code postal
+Sold : Vendu

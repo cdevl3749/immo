@@ -19,7 +19,8 @@ class Property
 
     const HEAT = [
         0 => 'Electrique',
-        1 => 'Gaz'
+        1 => 'Gaz',
+        2 => 'Mazout'
     ];
 
     /**
