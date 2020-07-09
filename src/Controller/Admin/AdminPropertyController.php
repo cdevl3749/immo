@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Option;
 use App\Entity\Property;
 use App\Form\PropertyType;
 use App\Repository\PropertyRepository;
@@ -44,7 +45,6 @@ class AdminPropertyController extends AbstractController
     public function new(Request $request)
     {
         $property = new Property();
-        $form = $this->createForm(PropertyType::class, $property);
         $form = $this->createForm(PropertyType::class, $property);
         $form->handleRequest($request);
 

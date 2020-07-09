@@ -8,7 +8,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UsersRepository::class)
- * @ORM\Table(name="users")
+ * @ORM\Table(name="user")
  */
 class Users implements UserInterface,\Serializable
 {
