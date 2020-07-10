@@ -3,7 +3,7 @@ security:
     providers:
         from_database:
             entity:
-                class: App\Entity\Users
+                class: App\Entity\User
                 property: username
    
     firewalls:
@@ -34,6 +34,6 @@ security:
         # - { path: ^/profile, roles: ROLE_USER }
 
     encoders:
-        App\Entity\Users:
+        App\Entity\User:
             algorithm: bcrypt
             cost: 12
