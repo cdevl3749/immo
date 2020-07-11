@@ -41,7 +41,7 @@ class AdminOptionController extends AbstractController
 
             return $this->redirectToRoute('admin.option.index');
         }
-
+        //dd($form);
         return $this->render('admin/option/new.html.twig', [
             'option' => $option,
             'form' => $form->createView(),
@@ -61,7 +61,7 @@ class AdminOptionController extends AbstractController
 
             return $this->redirectToRoute('admin.option.edit', ['id' => $option->getId()]);
         }
-
+        //dd($form);
         return $this->render('admin/option/edit.html.twig', [
             'option' => $option,
             'form' => $form->createView(),

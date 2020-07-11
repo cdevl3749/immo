@@ -29,7 +29,7 @@ class PropertyType extends AbstractType
                 'class' => Option::class,
                 'choice_label' => 'name',
                 'multiple' => true
-            ])
+            ]) 
             ->add('city')
             ->add('address')
             ->add('postal_code')
