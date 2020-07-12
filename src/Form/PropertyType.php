@@ -9,6 +9,9 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+//use Vich\UploaderBundle\Form\Type\VichImageType;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class PropertyType extends AbstractType
 {
@@ -30,6 +33,9 @@ class PropertyType extends AbstractType
                 'choice_label' => 'name',
                 'multiple' => true
             ]) 
+            ->add('imageFile', FileType::class, [
+                'required' => false
+            ])
             ->add('city')
             ->add('address')
             ->add('postal_code')
