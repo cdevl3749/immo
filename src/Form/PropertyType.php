@@ -34,7 +34,7 @@ class PropertyType extends AbstractType
                 'multiple' => true
             ]) 
             ->add('imageFile', FileType::class, [
-                'required' => false
+                'required' => false,
             ])
             ->add('city')
             ->add('address')

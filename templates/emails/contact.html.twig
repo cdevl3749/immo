@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="font-family: 'Questrial', Helevetica, sans-serif;" bgcolor="#efefef">
+    <table bgcolor="#007bff" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td style="height:30px;"></td>
+            </tr>
+            <tr align="center">
+                <td style="font-size: 24px; color:#fff;">Twins Immo</td>
+            </tr>
+            <tr>
+                <td style="height:30px;"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table bgcolor="#fff" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td style="height:30px;"></td>
+            </tr>
+            <tr>
+                <td style="width: 20vh;"></td>
+                <td>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="{{ contact.property.imageFile ?? "https://zupimages.net/up/20/29/29ip.jpg" }}" alt="" width="280">
+                                </td>
+                                <td style="width: 10px;"></td>
+                                <td valign="top">
+                                    <table>
+                                        <tbody>
+                                            <tr style="margin: 7px 0 0 7px;">
+                                                <h2> {{ contact.property.title }} </h2>
+                                                <p> {{ contact.property.description }} </p>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                          <td>Surface habitable</td>
+                                          <td>{{ contact.property.surface }} m²</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Pièces</td>
+                                          <td>{{ contact.property.rooms }}</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Chambres</td>
+                                          <td>{{ contact.property.bedrooms }}</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Etage</td>
+                                          <td>{{ contact.property.floor }}</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Chauffage</td>
+                                          <td>{{ contact.property.heatType }}</td>
+                                        </tr>
+                                      </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td style="width: 20vh;"></td>
+            </tr>
+            <tr>
+                <td style="height:30px;"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table bgcolor="#efefef" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td style="height:30px;"></td>
+            </tr>
+            <tr>
+                <td style="width: 20vh;"></td>
+                <td>
+                    <p> {{ contact.message }} </p>
+                    <p> Numéro de téléphone : {{ contact.phone}} </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:30px;"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

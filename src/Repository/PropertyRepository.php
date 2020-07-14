@@ -61,7 +61,7 @@ class PropertyRepository extends ServiceEntityRepository
     {
         return $this->findVisibleQuery()
         ->where('p.sold = false')
-        ->setMaxResults(4)
+        ->setMaxResults(3)
         ->getQuery()
         ->getResult();
     }
