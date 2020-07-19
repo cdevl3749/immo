@@ -33,7 +33,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="{{ contact.property.imageFile ?? "https://zupimages.net/up/20/29/29ip.jpg" }}" alt="" width="280">
+                                    <img src="{{vich_uploader_asset(contact.property, 'imageFile') | imagine_filter('medium') ? "https://zupimages.net/up/20/29/29ip.jpg" }}" alt="" width="280">
                                 </td>
                                 <td style="width: 10px;"></td>
                                 <td valign="top">

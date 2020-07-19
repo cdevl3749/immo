@@ -38,7 +38,7 @@ class AdminOptionController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($option);
             $entityManager->flush();
-
+            $this->addFlash('success',"L'option a bien été creer");
             return $this->redirectToRoute('admin.option.index');
         }
         //dd($form);
@@ -58,8 +58,8 @@ class AdminOptionController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
-
-            return $this->redirectToRoute('admin.option.edit', ['id' => $option->getId()]);
+            $this->addFlash('success',"L'option a bien été modifier");
+            return $this->redirectToRoute('admin.option.index');
         }
         //dd($form);
         return $this->render('admin/option/edit.html.twig', [
@@ -73,12 +73,12 @@ class AdminOptionController extends AbstractController
      */
     public function delete(Request $request, Option $option): Response
     {
-        if ($this->isCsrfTokenValid('admin/delete'.$option->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete'.$option->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($option);
             $entityManager->flush();
         }
-
+        $this->addFlash('success',"L'option a bien été supprimé");
         return $this->redirectToRoute('admin.option.index');
     }
 }

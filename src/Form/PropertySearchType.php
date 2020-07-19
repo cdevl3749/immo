@@ -35,9 +35,9 @@ class PropertySearchType extends AbstractType
                 'label' => false,
                 'class' => Option::class,
                 'choice_label' => 'name',
-                'multiple' => true 
+                'multiple' => true,
             ])
-            
+            // Faut que je regarde pck la je voie pas le champ qui veux rendre cta 'paesst dans les options en fait le rendu ( le visuel ) que sa doitr avoirshow
         ;
     }
 
